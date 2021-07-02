@@ -240,7 +240,7 @@ End the we can see sample screenshot running project with android like below.
 <img src="https://user-images.githubusercontent.com/39134128/124236060-38aa3200-db40-11eb-815f-106b2f98123f.jpeg" width="25%"/>
 <img src="https://user-images.githubusercontent.com/39134128/124236017-2b8d4300-db40-11eb-87fb-b44541163932.jpeg" width="25%"/>
 <img src="https://user-images.githubusercontent.com/39134128/124236047-3516ab00-db40-11eb-842b-1f3b0f83db16.jpeg" width="25%"/>
-<img src="https://user-images.githubusercontent.com/39134128/124236074-3c3db900-db40-11eb-8ffb-90814a910ff6.jpeg" width="25%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124263028-f2af9700-db5c-11eb-9573-91cab6197f82.jpeg" width="25%"/>
 <img src="https://user-images.githubusercontent.com/39134128/124236002-27612580-db40-11eb-9c77-18e00b2170a4.jpeg" width="25%"/>
 </p>
 
