@@ -1,6 +1,5 @@
 <h1>SMARTFREN TV</h1>
 
-
 >***⚠️ Please visit documentation link*** : **[Documentation & Overview](https://imamabdulazis.github.io/smartfrentv)**
 
 
@@ -13,8 +12,6 @@ to show some movie data and tv shows like poster and banner.
 
 ### **Getting Started**
 You can modifie or edit component in this repository with your owns style,<br/> or learn more about this application by fork and develop </br>
-<strong>Clone the repository with this command :</strong>
-
 </br>
 </br>
 
