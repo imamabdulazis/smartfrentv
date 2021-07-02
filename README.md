@@ -225,27 +225,27 @@ End the we can see sample screenshot running project with android like below.
 </br>
 
 <h3>TV Shows</h3>
-<img src="https://user-images.githubusercontent.com/39134128/124235114-1368f400-db3f-11eb-9238-c30734917494.jpeg" width="30%"/>
-<img src="https://user-images.githubusercontent.com/39134128/124235432-6b9ff600-db3f-11eb-9c67-be3ac562fe76.jpeg" width="30%"/>
-<img src="https://user-images.githubusercontent.com/39134128/124235442-6e025000-db3f-11eb-841a-47fa1486fa4a.jpeg" width="30%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124235114-1368f400-db3f-11eb-9238-c30734917494.jpeg" width="25%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124235432-6b9ff600-db3f-11eb-9c67-be3ac562fe76.jpeg" width="25%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124235442-6e025000-db3f-11eb-841a-47fa1486fa4a.jpeg" width="25%"/>
 
 </br>
 </br>
 
 <h3>Movie</h3>
 
-<img src="https://user-images.githubusercontent.com/39134128/124236060-38aa3200-db40-11eb-815f-106b2f98123f.jpeg" width="30%"/>
-<img src="https://user-images.githubusercontent.com/39134128/124236017-2b8d4300-db40-11eb-87fb-b44541163932.jpeg" width="30%"/>
-<img src="https://user-images.githubusercontent.com/39134128/124236047-3516ab00-db40-11eb-842b-1f3b0f83db16.jpeg" width="30%"/>
-<img src="https://user-images.githubusercontent.com/39134128/124236074-3c3db900-db40-11eb-8ffb-90814a910ff6.jpeg" width="30%"/>
-<img src="https://user-images.githubusercontent.com/39134128/124236002-27612580-db40-11eb-9c77-18e00b2170a4.jpeg" width="30%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124236060-38aa3200-db40-11eb-815f-106b2f98123f.jpeg" width="25%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124236017-2b8d4300-db40-11eb-87fb-b44541163932.jpeg" width="25%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124236047-3516ab00-db40-11eb-842b-1f3b0f83db16.jpeg" width="25%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124236074-3c3db900-db40-11eb-8ffb-90814a910ff6.jpeg" width="25%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124236002-27612580-db40-11eb-9c77-18e00b2170a4.jpeg" width="25%"/>
 
 
 </br>
 </br>
 
 <h3>Popular People</h3>
-<img src="https://user-images.githubusercontent.com/39134128/124236030-2f20ca00-db40-11eb-8ed6-91a42ac4ebb5.jpeg" width="30%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124236030-2f20ca00-db40-11eb-8ed6-91a42ac4ebb5.jpeg" width="25%"/>
 
 
 ## **CREDIT**
