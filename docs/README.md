@@ -1,7 +1,7 @@
-<h1>SMARTFREN TV</>
+<h1>SMARTFREN TV</h1>
 
 ## **INTRODUCTION**
-Application is a catalog listing for movies & TV shows provide by [Smartfren TV](https://www.smartfren.com/), in this application there is some
+Application is a catalog listing for movies & TV shows develop by [Imam Abdul Azis](https://github.com/imamabdulazis) to finish **Mobile Testing** **[Smartfren](https://www.smartfren.com)** Company, in this application there is some
 features like ***Movie now playing***, ***Top rated movie***, ***Tv airing today*** and many other.
 Fetching data in this application is using opensource free api [TMDB](https://developers.themoviedb.org/3/getting-started/introduction) 
 to show some movie data and tv shows like poster and banner.
@@ -10,11 +10,20 @@ to show some movie data and tv shows like poster and banner.
 ### **Getting Started**
 You can modifie or edit component in this repository with your owns style,<br/> or learn more about this application by fork and develop </br>
 <strong>Clone the repository with this command :</strong>
-tarted**
+
 </br>
 </br>
 
-#### Clone
+### **GraphQL**
+Using graphql playground to test the API is work or not and also create shema to get response data from server. </br>
+ ***Please using this link*** : **[GRAPHQL PLAYGROUND](https://tmdb-api.saeris.io/.netlify/functions/tmdb-api)**
+
+![Screen Shot 2021-07-02 at 2 25 14 PM](https://user-images.githubusercontent.com/39134128/124237092-5deb7000-db41-11eb-803e-f5766d286d77.png)
+
+</br>
+</br>
+
+### **Clone**
 
 ```shell
 git clone https://devops-imun-admin@bitbucket.org/devops-imun/smartfrentv.git
@@ -22,7 +31,7 @@ git clone https://devops-imun-admin@bitbucket.org/devops-imun/smartfrentv.git
 </br>
 </br>
 
-#### Install
+### **Install**
 
 ```shell
 npm install or yarn add
@@ -30,7 +39,7 @@ npm install or yarn add
 </br>
 </br>
 
-#### Run
+### **Run**
 
 ```shell
 npx react-native run-android
@@ -38,12 +47,31 @@ npx react-native run-android
 </br>
 </br>
 
+### **Connection**
 
-#### Testing
+```js
+export const link = createHttpLink({
+  uri: config.baseUrl,
+});
 
-```shell
-npm test or yarn test
-``` 
+const client = new ApolloClient({
+  cache: new InMemoryCache(),
+  link,
+  onError: ({ networkError, graphQLErrors }) => {
+    console.log('graphQLErrors', graphQLErrors);
+    console.log('networkError', networkError);
+  },
+});
+
+const App: () => Node = () => {
+  return (
+    <ApolloProvider client={client}>
+      <RouteNavigator />
+    </ApolloProvider>
+  );
+};
+
+```
 
 </br>
 </br>
@@ -80,25 +108,23 @@ so I've list to make sure the library is works and easy to develop by other deve
 
 | Library                                                           | Usability                 |   Star    |
 | :-----------------------------------------------------------------|:--------------------------|:---------:|
-| [@apollo/client](https://pub.dev/packages/dartz)                           | Data Handling             | [![Github Stars](https://img.shields.io/github/stars/spebbe/dartz?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/spebbe/dartz) |
-| [@react-native-community/masked-view](https://pub.dev/packages/dio)                               | Http client               | [![Github Stars](https://img.shields.io/github/stars/flutterchina/dio?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/felangel/bloc)    |
-| [@react-navigation/bottom-tabs](https://pub.dev/packages/equatable)                   | Getting data abstract     | [![Github Stars](https://img.shields.io/github/stars/felangel/equatable?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/felangel/equatable)    |
-| [@react-navigation/drawer](https://pub.dev/packages/flutter_bloc)               | State management          | [![Github Stars](https://img.shields.io/github/stars/felangel/bloc.svg?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/felangel/bloc)      |
-| [@react-navigation/material-top-tabs](https://pub.dev/packages/get_it)                         | Component Injector        | [![Github Stars](https://img.shields.io/github/stars/fluttercommunity/get_it?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/fluttercommunity/get_it)     |
-| [@react-navigation/native](https://pub.dev/packages/get)                              | Component handling        | [![Github Stars](https://img.shields.io/github/stars/jonataslaw/getx?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/jonataslaw/getx)       |
-| [@react-navigation/stack](https://pub.dev/packages/pedantic)                     | Code formatting           | [![Github Stars](https://img.shields.io/github/stars/google/pedantic?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/google/pedantic)     |
-| [graphql](https://pub.dev/packages/rxdart)                         | Data handling async       | [![Github Stars](https://img.shields.io/github/stars/reactiveX/rxdart?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/ReactiveX/rxdart)     |
-| [moment](https://pub.dev/packages/logger)                         | Beautiful terminal log    | [![Github Stars](https://img.shields.io/github/stars/google/pedantic?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/google/pedantic)     |
-| [react-native-elements](https://pub.dev/packages/shared_preferences) | Save data local storage   | [![Github Stars](https://img.shields.io/github/stars/flutter/plugins?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/flutter/plugins)     |
-| [react-native-gesture-handler](https://pub.dev/packages/shared_preferences) | Save data local storage   | [![Github Stars](https://img.shields.io/github/stars/flutter/plugins?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/flutter/plugins)     |
-| [react-native-paper](https://pub.dev/packages/shared_preferences) | Save data local storage   | [![Github Stars](https://img.shields.io/github/stars/flutter/plugins?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/flutter/plugins)     |
-| [react-native-reanimated](https://pub.dev/packages/shared_preferences) | Save data local storage   | [![Github Stars](https://img.shields.io/github/stars/flutter/plugins?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/flutter/plugins)     |
-| [react-native-safe-area-context](https://pub.dev/packages/shared_preferences) | Save data local storage   | [![Github Stars](https://img.shields.io/github/stars/flutter/plugins?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/flutter/plugins)     |
-| [react-native-screens](https://pub.dev/packages/shared_preferences) | Save data local storage   | [![Github Stars](https://img.shields.io/github/stars/flutter/plugins?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/flutter/plugins)     |
-| [react-native-skeleton-placeholder](https://pub.dev/packages/shared_preferences) | Save data local storage   | [![Github Stars](https://img.shields.io/github/stars/flutter/plugins?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/flutter/plugins)     |
-| [react-native-splash-screen](https://pub.dev/packages/shared_preferences) | Save data local storage   | [![Github Stars](https://img.shields.io/github/stars/flutter/plugins?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/flutter/plugins)     |
-| [react-native-tab-view](https://pub.dev/packages/shared_preferences) | Save data local storage   | [![Github Stars](https://img.shields.io/github/stars/flutter/plugins?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/flutter/plugins)     |
-| [react-native-vector-icons](https://pub.dev/packages/shared_preferences) | Save data local storage   | [![Github Stars](https://img.shields.io/github/stars/flutter/plugins?style=flat&logo=github&colorB=blue&label=stars)](https://github.com/flutter/plugins)     |
+| [@apollo/client](https://github.com/apollographql/apollo-client)                                                         | Data Handling             | ![Github Stars](https://img.shields.io/github/stars/apollographql/apollo-client?style=flat&logo=github&colorB=blue&label=stars) |
+| [@react-native-masked-view/masked-view](https://github.com/react-native-masked-view/masked-view)                         | Required React Navigation               | ![Github Stars](https://img.shields.io/github/stars/react-native-masked-view/masked-view?style=flat&logo=github&colorB=blue&label=stars)   |
+| [@react-navigation](https://github.com/react-navigation/react-navigation/tree/4.x)                                       | Navigation                | ![Github Stars](https://img.shields.io/github/stars/react-navigation/react-navigation?style=flat&logo=github&colorB=blue&label=stars)   |
+| [graphql](https://github.com/graphql/graphql-js)                                                                               | Data handling Graphql     | ![Github Stars](https://img.shields.io/github/stars/graphql/graphql-js?style=flat&logo=github&colorB=blue&label=stars)     |
+| [moment](https://github.com/moment/moment)                                                                                | Date format               | ![Github Stars](https://img.shields.io/github/stars/moment/moment?style=flat&logo=github&colorB=blue&label=stars)    |
+| [react-native-elements](https://github.com/react-native-elements/react-native-elements)                                                     | Library  Compinent UI     | ![Github Stars](https://img.shields.io/github/stars/react-native-elements/react-native-elements?style=flat&logo=github&colorB=blue&label=stars)  |
+| [react-native-gesture-handler](https://github.com/software-mansion/react-native-gesture-handler)                                              | Save data local storage   | ![Github Stars](https://img.shields.io/github/stars/software-mansion/react-native-gesture-handler?style=flat&logo=github&colorB=blue&label=stars)    |
+| [react-native-paper](https://github.com/callstack/react-native-paper)                                                        | Library  Compinent UI     | ![Github Stars](https://img.shields.io/github/stars/callstack/react-native-paper?style=flat&logo=github&colorB=blue&label=stars)    |
+| [react-native-reanimated](https://github.com/software-mansion/react-native-reanimated)                                                   | Build Beautiful Animation | ![Github Stars](https://img.shields.io/github/stars/software-mansion/react-native-reanimated?style=flat&logo=github&colorB=blue&label=stars)    |
+| [react-native-safe-area-context](https://github.com/th3rdwave/react-native-safe-area-context)                                            | Manage SafeAreaScreen     | ![Github Stars](https://img.shields.io/github/stars/th3rdwave/react-native-safe-area-context?style=flat&logo=github&colorB=blue&label=stars)    |
+| [react-native-screens](https://github.com/software-mansion/react-native-screens)                                                      | Required React Navigation | ![Github Stars](https://img.shields.io/github/stars/software-mansion/react-native-screens?style=flat&logo=github&colorB=blue&label=stars)    |
+| [react-native-skeleton-placeholder](https://github.com/chramos/react-native-skeleton-placeholder)                                         | Skeleton Placeholder      | ![Github Stars](https://img.shields.io/github/stars/chramos/react-native-skeleton-placeholder?style=flat&logo=github&colorB=blue&label=stars)    |
+| [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)                                                | Build Splash Screen Customization    | ![Github Stars](https://img.shields.io/github/stars/crazycodeboy/react-native-splash-screen?style=flat&logo=github&colorB=blue&label=stars)     |
+| [react-native-tab-view](https://github.com/satya164/react-native-tab-view)                                                     |  Required React Navigation  | ![Github Stars](https://img.shields.io/github/stars/satya164/react-native-tab-view?style=flat&logo=github&colorB=blue&label=stars)     |
+| [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)                                                 | React Native Icons   |![Github Stars](https://img.shields.io/github/stars/oblador/react-native-vector-icons?style=flat&logo=github&colorB=blue&label=stars)     |
+| [react-native-linear-gradient](https://github.com/react-native-linear-gradient/react-native-linear-gradient)                                       |  Build Linear Gradient UI   | ![Github Stars](https://img.shields.io/github/stars/react-native-linear-gradient/react-native-linear-gradient?style=flat&logo=github&colorB=blue&label=stars)     |
+
 <br/>
 <br/>
 
@@ -174,9 +200,58 @@ it('Get now playing movie', async () => {
 
 ```
 
+**RUN**
+```shell
+npm test or yarn test
+```
+
+</br>
+</br>
+
+**Example Overview**
+
+![Screen Shot 2021-07-02 at 2 32 12 PM](https://user-images.githubusercontent.com/39134128/124238040-62645880-db42-11eb-9731-779ee7f11e89.png)
+
+
+</br>
+</br>
 
 ## **OVERVIEW**
 
-### **Movie**
+End the we can see sample screenshot running project with android like below.
 
-### **TV Shows**
+</br>
+
+<h3>TV Shows</h3>
+<img src="https://user-images.githubusercontent.com/39134128/124235114-1368f400-db3f-11eb-9238-c30734917494.jpeg" width="30%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124235432-6b9ff600-db3f-11eb-9c67-be3ac562fe76.jpeg" width="30%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124235442-6e025000-db3f-11eb-841a-47fa1486fa4a.jpeg" width="30%"/>
+
+</br>
+</br>
+
+<h3>Movie</h3>
+
+<img src="https://user-images.githubusercontent.com/39134128/124236060-38aa3200-db40-11eb-815f-106b2f98123f.jpeg" width="30%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124236017-2b8d4300-db40-11eb-87fb-b44541163932.jpeg" width="30%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124236047-3516ab00-db40-11eb-842b-1f3b0f83db16.jpeg" width="30%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124236074-3c3db900-db40-11eb-8ffb-90814a910ff6.jpeg" width="30%"/>
+<img src="https://user-images.githubusercontent.com/39134128/124236002-27612580-db40-11eb-9c77-18e00b2170a4.jpeg" width="30%"/>
+
+
+</br>
+</br>
+
+<h3>Popular People</h3>
+<img src="https://user-images.githubusercontent.com/39134128/124236030-2f20ca00-db40-11eb-8ed6-91a42ac4ebb5.jpeg" width="30%"/>
+
+
+## **CREDIT**
+
+**GraphQL Playground TMDB**
+- [Drake Costa Saeris](https://github.com/Saeris/tmdb-api)
+
+```fix
+Happy Coding 💻  | 2021
+```
+
